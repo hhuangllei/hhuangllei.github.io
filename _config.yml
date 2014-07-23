@@ -1,1 +1,3 @@
 #baseurl: D:\Git\hhuangllei.github.io\_site
+baseurl: /
+markdown: kramdown
