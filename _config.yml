@@ -1,5 +1,15 @@
-#baseurl: D:\Git\hhuangllei.github.io\_site
+# Site settings
+title: MrKnight's Blog
+email: lei.huang@pku.edu.cn
+description: "Just on the road~~"
 baseurl: ""
+#url: "http://mrknight.info"
+url: ""
+github_username:  hhuangllei
 
 # default Markdown interpreter: Maruku, upgrading to kramdown
-markdown: kramdown
+# Build settings
+# markdown: kramdown
+permalink: pretty
+highlighter: pygments
+mardown: redcarpet
