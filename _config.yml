@@ -1,3 +1,5 @@
 #baseurl: D:\Git\hhuangllei.github.io\_site
 baseurl: /
+
+# default Markdown interpreter: Maruku, upgrading to kramdown
 markdown: kramdown
