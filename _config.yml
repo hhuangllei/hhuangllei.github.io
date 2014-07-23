@@ -9,7 +9,6 @@ github_username:  hhuangllei
 
 # default Markdown interpreter: Maruku, upgrading to kramdown
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 permalink: pretty
-highlighter: pygments
-mardown: redcarpet
+pygments: true
