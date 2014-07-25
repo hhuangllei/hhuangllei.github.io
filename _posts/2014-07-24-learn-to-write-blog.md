@@ -18,22 +18,23 @@ title: learn to write blog
 			+ easy_install pygments
 		- generate pygments.css
 			+ cd \"D:\Program Files (X86)\Python27\Scripts\"
-			+ pygmentize -S default fruity -f html > pygments.css
+			+ pygmentize -S default -f html > pygments.css
 		- add pygments.css to html
 	* demo
-{% highlight ruby linenos%}
-def show
-	@widget = Widget(params[:id])
-	respond_to do |format|
-		format.html # show.html.erb
-		format.json { render json: @widget }
+	{% highlight ruby %}
+	def show
+		@widget = Widget(params[:id])
+		respond_to do |format|
+			format.html # show.html.erb
+			format.json { render json: @widget }
+		end
 	end
-end
-{% endhighlight %}
+	{% endhighlight %}
 
-{% highlight C %}
-int s = 0;
-for (int i=1; i<10; ++i)
-	s += 1;
-printf("s = %d\n", s);
-{% endhighlight %}
+	{% highlight C %}
+	// test highlight for C
+	int s = 0;
+	for (int i=1; i<10; ++i)
+		s += 1;
+	printf("s = %d\n", s);
+	{% endhighlight %}
