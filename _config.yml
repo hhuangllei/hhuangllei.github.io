@@ -3,10 +3,15 @@ title: MrKnight's Blog
 email: lei.huang@pku.edu.cn
 description: "Just on the road~~"
 baseurl: ""
-#url: "http://mrknight.info"
 url: ""
-github_username:  hhuangllei
+encoding: utf-8
 
+author:
+ name: Huang Lei
+ email: hhuangllei@qq.com
+ github_username:  hhuangllei
+ weibo_username: hhuangllei
+ 
 # default Markdown interpreter: Maruku, upgrading to kramdown
 # Build settings
 markdown: kramdown
