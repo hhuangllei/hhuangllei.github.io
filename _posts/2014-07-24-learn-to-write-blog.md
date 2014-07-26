@@ -25,3 +25,6 @@ for (int i=1; i<10; ++i)
 	s += 1;
 printf("s = %d\n", s);
 {% endhighlight %}
+
+* learn to use Post URL
+<p>{% post_url 2014-07-23-hello-world %}</p>

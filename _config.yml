@@ -11,4 +11,4 @@ github_username:  hhuangllei
 # Build settings
 markdown: kramdown
 permalink: pretty
-pygments: true
+highlighter: pygments
