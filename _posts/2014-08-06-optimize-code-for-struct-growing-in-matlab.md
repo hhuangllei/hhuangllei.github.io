@@ -3,7 +3,6 @@ layout: post
 title: 关于matlab中struct增长的优化
 ---
 
-##{{page.title}}##
 在平时编写matlab代码进行实验，偶然间发现matlab结构进行行增长或者列增长速度差异较大，选择列增长能够很大程度上提速。
 为了进一步验证，就写了一段demo程序测试：
 {% highlight matlab %}
