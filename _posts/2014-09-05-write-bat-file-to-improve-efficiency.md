@@ -36,7 +36,7 @@ pause
 	该集表示以增量形式从开始到结束的一个数字序列。因此，(1,1,5)将产生序列
     1 2 3 4 5，(5,-1,1)将产生序列(5 4 3 2 1)
 
-2. `start`
+3. `start`
 
 	`START ["title"] [command/program] [parameters]`
 	
@@ -46,7 +46,8 @@ pause
 
 延迟环境变量，顾名思义，延迟读取了环境变量。当我们开启延迟环境变量之后，命令解释器就不再是运行命令前先将环境变量读取出来再执行，而是当我们用到延迟环境变量的时候再去从环境变量中读取出来，这就延迟了环境变量读取的时间。
 
-1. 未使用延迟变量
+* 未使用延迟变量
+
 {% highlight bat %}
 @echo off
 set var=1
@@ -56,9 +57,11 @@ echo %var%
 )
 pause
 {% endhighlight %}
+
 上述代码未使用延迟变量，输出全是1，并不是我们想要的var的累加。
 
-2. 使用延迟变量
+* 使用延迟变量
+
 {% highlight bat %}
 @echo off
 setlocal enabledelayedexpansion
@@ -69,7 +72,7 @@ echo !var!
 )
 pause
 {% endhighlight %}
-
+	
 上述代码使用了延迟变量，输出`2 4 7 11 16`的累加，得到我们想要的结果。
 
 最后再简单解释下上述代码:
