@@ -1,9 +1,9 @@
 ---
 layout: post
 title: learn to write blog
+modify_date: 2014-07-27 16:08:00
 ---
 
-##{{page.title}}##
 1. learn to cite a image
 	<p>markdown code: ![image]({{site.url}}/assets/img/demo.jpg)</p>
 	![image]({{site.url}}/assets/img/demo.jpg)
