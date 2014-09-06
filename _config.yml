@@ -17,3 +17,4 @@ author:
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+excerpt_separator: ""
