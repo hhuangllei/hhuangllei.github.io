@@ -19,7 +19,7 @@ title: windows下使用openmp编译并行matlab版本的libsvm
 
 突然发现，`CFLAGS LDFLAGS`好像都是Linux下编译时使用的编译参数啊（使用matlab的大神都是在Linux下使用的啊。。。），原来折腾大半天原来在windows上照着Linux的编译啊。。。
 
-知道问题所在后，解决起来就很快了，就是编译参数的问题，修改make.m文件，在mex编译语句中加入`COMPFLAGS="$COMPFLAGS /openmp"`，重新编译，测试运行，成功并行^_^
+我的运行环境是windows，matlab2012b，mex使用编译器是Microsoft Visual C++ 2010。知道问题所在，解决起来就很快了，就是编译参数的问题，修改make.m文件，在mex编译语句中加入`COMPFLAGS="$COMPFLAGS /openmp"`，重新编译，测试运行，成功并行^_^
 
 在正样本1000，负样本1000，特征维度1000的训练集上，训练速度测试如下所示：
 
