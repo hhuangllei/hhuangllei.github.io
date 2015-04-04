@@ -1,10 +1,10 @@
 ---
 layout: post
-title: DP for Maximum Subarray, Longest Common Substring, Longest Common Subsequence, Longest Increasing Subsequence and Edit Distance
+title: 动态规划之LCS的相关问题
 modify_date: 2015-04-04 22:00:00
 ---
 
-原来创建这个博客就是想记录下自己平时遇到的问题，以及所思所想，但因为各种原因，真的是all things fXXk up(最近才知道这是foo的命名起源-_-||)啊，又给断了几个月，终于想起了这个人博客啊，真的是我一个人记录、阅读的博客。
+原来创建这个博客就是想记录下自己平时遇到的问题，以及所思所想，但因为各种原因，真的是all things fXXk up(最近才知道这是foo的命名起源-_-|)啊，又给断了几个月，终于想起了这个人博客啊，真的是我一个人记录、阅读的博客。
 
 最近这段时间，为了秋招找工作开始看一些算法面试题，这次准备谈一谈涉及动态规划（DP）的几个看似很相似的问题：最大子段和（Maximum Subarray），最长公共子串(Longest Common Substring)，最长公共子序列（Longest Common Subsequence），最长递增子序列（Longest Increasing Subsequence），字符串编辑距离（Edit Distance）。
 
