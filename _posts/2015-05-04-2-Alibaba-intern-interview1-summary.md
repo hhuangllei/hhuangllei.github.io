@@ -75,6 +75,7 @@ modify_date: 2015-05-04 16:00:00 +0800
 		  2. 信号
 		  3. 共享存储
 	  * 套接字（SOCKET）
+	  
 	  http://baike.baidu.com/view/1492468.htm
 	  http://blog.csdn.net/yufaw/article/details/7409596
 
