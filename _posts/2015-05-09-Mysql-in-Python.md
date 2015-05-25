@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mysql在Python中的使用
+categories: [coding]
 modify_date: 2015-05-09 21:00:00 +0800
 ---
 

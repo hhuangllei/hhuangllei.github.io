@@ -19,6 +19,19 @@ body {
   text-align: center;
 }
 
+.header {
+	vertical-align: middle;
+	height: 50px;
+	margin-bottom: 1.2em;
+}
+
+.avatar { 				
+	width:50px; 
+	height:50px; 
+	border-radius:50%; 
+	float: left;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
@@ -49,8 +62,25 @@ a:visited { color: #a0a; }
   font-size: 80%;
 }
 
-.about {
-color: #aaa;
+ul#ul-navbar {
+	font-size:20px;
+	padding: 15px 0px 15px 0px;
+	display: inline-block;
+}
+
+
+#ul-navbar li {	
+	margin-left: 5px;
+	margin-right: 5px;
+	list-style: none;	
+	float: left;
+}
+
+#about {
+	font-size:20px;
+	padding: 15px;
+	//display: inline-block;
+	float: right;	
 }
 
 /*****************************************************************************/
@@ -67,13 +97,20 @@ color: #aaa;
   line-height: 1em;
 }
 
+div#category_list {
+	margin-bottom: 2em;
+}
+
 .header a {
   font-weight: bold;
   text-decoration: none;
 }
 
 .title {
+  font-size:20px;
+  padding: 15px;
   display: inline-block;
+  float: left;
   margin-bottom: 1.2em;
 }
 
@@ -81,8 +118,33 @@ color: #aaa;
   color: #a00;
 }
 
+.title a:link {
+  color: #a00;
+}
+
+.title a:visited {
+  color: #a00;
+}
+
 .title a:hover {
   color: #000;
+}
+
+a.nav-link {
+  color: #a00;
+}
+
+a.nav-link:link {
+  color: #a00;
+}
+
+a.nav-link:visited {
+  color: #a00;
+}
+
+a.nav-link:hover {
+  color: #000;
+  text-decoration: underline
 }
 
 .header a.extra {

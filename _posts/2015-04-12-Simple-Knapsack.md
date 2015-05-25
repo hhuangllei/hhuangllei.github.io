@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 简单背包问题的递归和非递归实现
+categories: [algorithm]
 modify_date: 2015-04-12 22:00:00 +0800
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tencent实习线下笔试经验总结
+categories: [job]
 modify_date: 2015-05-04 20:00:00 +0800
 ---
 

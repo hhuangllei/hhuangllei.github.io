@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 杨氏矩阵的查找
+categories: [algorithm]
 modify_date: 2015-04-12 20:00:00 +0800
 ---
 

@@ -1,10 +1,14 @@
 # Site settings
-title: MrKnight's Blog
+title: MrKnight
 email: lei.huang@pku.edu.cn
 description: "Just on the road~~"
 baseurl: ""
 url: ""
 encoding: utf-8
+
+def_categories_cn: [编程杂事, 算法积累, 生活点滴, 就业工作]
+def_categories_en: [coding, algorithm, life, job]
+categories_path : category
 
 author:
  name: Huang Lei

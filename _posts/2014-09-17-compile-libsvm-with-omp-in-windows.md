@@ -1,6 +1,7 @@
 ---
 layout: post
 title: windows下使用openmp编译并行matlab版本的libsvm
+categories: [coding]
 ---
 
 最近使用matlab版本的libsvm进行实验，发现当训练样本稍微多一些，svmtrain和svmpredict的时间过长，拖慢了实验进度，因此就去找关于libsvm的并行解决方法。

@@ -25,9 +25,15 @@
 	<body>
 		<div class="site">
 			<div class="header">
+				<img class="avatar" src="/assets/img/avatar.jpg" />
 				<h1 class="title"><a href="/">{{ site.title }}</a></h1>
-				<a class="extra" href="/">主页</a>
-				<a class="about" href="/about">关于</a>
+				<ul id="ul-navbar">
+				<li><a class="nav-link" href="/category/coding/">{{ site.def_categories_cn[0] }}</a></li>
+				<li><a class="nav-link" href="/category/algorithm/">{{ site.def_categories_cn[1] }}</a></li>
+				<li><a class="nav-link" href="/category/life/">{{ site.def_categories_cn[2] }}</a></li>
+				<li><a class="nav-link" href="/category/job/">{{ site.def_categories_cn[3] }}</a></li>
+				</ul>
+				<a class="nav-link" id="about" href="/about">关于</a>
 			</div>
 
 			{{ content }}

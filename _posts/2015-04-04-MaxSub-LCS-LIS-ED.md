@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 动态规划之LCS的相关问题
+categories: [algorithm]
 modify_date: 2015-04-05 22:00:00 +0800
 ---
 
