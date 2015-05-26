@@ -195,7 +195,7 @@ a.nav-link:hover {
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
+  border: 1px #ddd;
   background-color: #eef;
   padding: 0 .4em;
 }
