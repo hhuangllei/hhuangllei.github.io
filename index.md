@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 我的Blog
+title: MrKnight的博客
 ---
 
 <div id="home">
-	<h1>Blog Posts</h1>
+	<h1>博客列表</h1>
 	<ul class="posts">
 		{% for post in site.posts %}
 			<li>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: learn to write blog
+categories: [life]
 modify_date: 2014-07-27 16:08:00 +0800
 ---
 
