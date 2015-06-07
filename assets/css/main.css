@@ -203,16 +203,29 @@ a.nav-link:hover {
 
 .post ul, .post ol {
   margin-left: 1.35em;
+  margin: 0.3em;
+}
+
+.post li {
+  margin: 0.3em;
 }
 
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .2em;
+  padding: 0.2em;
 }
 
 .post pre code {
   border: none;
+}
+
+blockquote {
+padding:0px 0px 0px 20px;
+border-left:5px solid #c9c9c9
+}
+blockquote p {
+display:block;
 }
 
 /* terminal */
