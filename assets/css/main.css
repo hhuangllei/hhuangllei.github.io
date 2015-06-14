@@ -201,13 +201,16 @@ a.nav-link:hover {
   padding: 0 .4em;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-  margin: 0.3em;
+.post ol {
+  margin: 0.2em 1.8em;
+}
+
+.post ul {
+	margin: 0.2em 1em;
 }
 
 .post li {
-  margin: 0.3em;
+  line-height:1.3;
 }
 
 .post code {
