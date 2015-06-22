@@ -243,3 +243,23 @@ display:block;
 .post pre.terminal code {
   background-color: #333;
 }
+
+.pagination{
+	margin-top:-1em;
+	margin-bottom:1em;
+	font-size:15px;
+	font-family:'Microsoft YaHei'
+}
+
+.pagination li {
+	display:inline;
+	text-decoration: none;
+}
+
+.pagination p{
+	display:inline;
+}
+
+.pagination a{
+	text-decoration: none;
+}
