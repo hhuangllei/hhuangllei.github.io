@@ -177,11 +177,11 @@ namespace Test
 
 ### HashSet
 
-C#中的HashSet，可以对应C++中Set，用来包含无重复项的无序列表（自动去重）。
+C#中的HashSet，可以对应C++中unordered_set，用来包含无重复项的无序列表（自动去重）。
 
 ### SortedSet
 
-C#中的SortedSet则是在HashSet基础上添加了自动排序功能。
+C#中的SortedSet则是在HashSet基础上添加了自动排序功能，对应C++中的set。
 
 下面给出关于HashSet和SortedSet的示例代码:
 
