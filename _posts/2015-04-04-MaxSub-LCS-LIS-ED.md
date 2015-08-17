@@ -82,7 +82,7 @@ int LongestCommonSubstring(string str1, string str2)
   * http://en.wikipedia.org/wiki/Longest_common_subsequence_problem
   * http://baike.baidu.com/view/2020307.htm
 
-  两个子串`str1`和`str2`，长度分别为`m`和`n`，记`F[i][j]`表示在`str1[i]`和`str2[j]`之前的最长公共子序列长度，则动态转移方程为：`F[i][j] = str1[i]==str[2] ? F[i-1][j-1]+1 : (max(F[i][j-1], F[i-1][j]))`。
+  两个子串`str1`和`str2`，长度分别为`m`和`n`，记`F[i][j]`表示在`str1[i]`和`str2[j]`之前的最长公共子序列长度，则动态转移方程为：`F[i][j] = str1[i]==str2[j] ? F[i-1][j-1]+1 : (max(F[i][j-1], F[i-1][j]))`。
   时间复杂度为`O(mn)`。
 
 {% highlight C++ %}
@@ -121,7 +121,7 @@ int LongestCommonSubsequence(string str1, string str2)
   记`F[i]`表示以`a[i]`结尾的最长递增子序列的长度，则状态转移方程为`F[i] = max{F[j]+1}, 1<=j<i, a[j]<a[i]`。
   时间复杂度为`O(n^2)`。
 	
-  上述基础版本的DP方法还有改进空间，考虑两个元素`a[i], a[j], i<j && F[i]==F[j]`，当后续的`a[k]`计算`F[k]`时，只用跟`a[i]`比较进行计算就可以了。
+  上述基础版本的DP方法还有改进空间，考虑两个元素`a[i], a[j], a[i] < a[j] && F[i]==F[j]`，当后续的`a[k]`计算`F[k]`时，只用跟`a[i]`比较进行计算就可以了。
 
   重新设计动态函数，记`F[i]`表示长度为i的递增子序列中的最小的最后一个元素（构成了长度为i的最大元素最小的递增子序列），即`F[i]=min{a[j], 以a[j]结束的长度为i的递增子序列}`，此时F中的元素单调递增。
 
