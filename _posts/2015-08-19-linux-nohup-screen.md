@@ -41,10 +41,10 @@ modify_date: 2015-08-19 17:00:00 +0800
 最后给出后台命令行运行matlab代码test.m再将输出重定向到文件file的代码，注意添加`-nodesktop -nojvm -r`，运行test.m时在键入'test'不要添加后缀，**如果加入了后缀，只会打开matlab而不执行**。
 
 {% highlight bat %}
-# matlab -nodesktop -nojvm -r test 							// cmd1
-# nohup matlab -nodesktop -nojvm -r test > file 2>&1 &		// cmd2
-# nohup matlab -nodesktop -nojvm -r test > file				// cmd3
-# nohup matlab -nodesktop -nojvm < test.m > file 2>&1 &		// cmd4
+# matlab -nodesktop -nojvm -r test                          // cmd1
+# nohup matlab -nodesktop -nojvm -r test > file 2>&1 &      // cmd2
+# nohup matlab -nodesktop -nojvm -r test > file             // cmd3
+# nohup matlab -nodesktop -nojvm < test.m > file 2>&1 &     // cmd4
 {% endhighlight %}
 ps
 注意：
