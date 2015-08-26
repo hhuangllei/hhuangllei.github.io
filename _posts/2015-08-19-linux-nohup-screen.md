@@ -29,6 +29,22 @@ modify_date: 2015-08-19 17:00:00 +0800
 # nohup <command> [argument…] &
 {% endhighlight %}
 
+添加重定向到文件
+
+{% highlight bat %}
+# nohup <command> [argument…] > file &
+# nohup <command> [argument…] > file 2>&1 &
+{% endhighlight %}
+
+其中`2>&1`是表示把标准错误输出stderr重定向到标准输出stdout，0表示stdin，1表示stdout，2表示stderr。另外，还要注意`>file 2>&1`和`2>&1 >file`的区别，前者表示**stdout重定向到文件file，stderr重定向到stdout，都输出到file**，后者表示**stderr到终端，stdout被重定向到文件file**。
+
+最后给出后台命令行运行matlab代码test.m再将输出重定向到文件file的代码，注意添加`-nodesktop -nojvm -r`，运行test.m时在键入'test'不要添加后缀，**如果加入了后缀，只会打开matlab而不执行**。
+
+{% highlight bat %}
+# nohup matlab -nodesktop -nojvm -r test > file 2>&1 &
+{% endhighlight %}
+
+
 
 * ###使用`screen`把程序放到screen会话中运行###
 
