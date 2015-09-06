@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最短路径算法
-categories: [coding]
+categories: [algorithm]
 modify_date: 2015-09-05 20:00:00 +0800
 ---
 
