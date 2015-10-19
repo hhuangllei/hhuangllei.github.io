@@ -22,9 +22,9 @@ void qsort (void* base, size_t num, size_t size,
 
 return <0, *p1 goes before *p2
 
-return <0, *p1 equivalent to *p2
+return =0, *p1 equivalent to *p2
 
-return <0, *p1 goes before *p2
+return >0, *p1 goes after *p2
 
 * <algorithm> sort
 
