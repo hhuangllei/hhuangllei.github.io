@@ -36,27 +36,27 @@ urllib2 /test/test_urllib2.py
 
 * 基本方法
 
-``` Python
+{% highlight Python %}
 url = 'http://www.baidu.com'
 urllib2.urlopen(url)
-```
+{% endhighlight %}
 
 * 添加data、http header
 
-``` Python
+{% highlight Python %}
 request = urllib2.Request(url)
 request.add_header('user-agent', 'Mozilla/5.0')
 response2 = urllib2.urlopen(request)
-```
+{% endhighlight %}
 
 * 添加特殊情景的处理器
 
-``` Python
+{% highlight Python %}
 cj = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 urllib2.install_opener(opener)
 response3 = urllib2.urlopen(url)
-```
+{% endhighlight %}
 
 ### 1.3 网页解析器
 从网页中提取有价值数据的工具

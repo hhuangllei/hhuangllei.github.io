@@ -53,14 +53,14 @@ tutorial/
 ## 2. 定义容器
 Item是装载爬取数据的容器，类似先前实现简易爬虫代码中的Python字典。在`.\turorial\items.py`中定义Iterm的域。
 
-``` Python
+{% highlight Python %}
 import scrapy
 
 class DmozItem(scrapy.Item):
     title = scrapy.Field()
     link = scrapy.Field()
     desc = scrapy.Field()
-```
+{% endhighlight %}
 
 ## 3. 实现爬虫
 Spider是用户定义的让Scrapy使用来爬取网站数据的类。
@@ -69,9 +69,9 @@ Spider定义了初始URL列表，如何扩充URL（URL管理器），如何下�
 
 Spider类是scrapy.Spider类的子类，需要用户在`.\tutorial\spiders`目录下创建自己的类，并定义一些属性：name, start_urls, parse()。
 
-创建`.\tutorial\spiders\dmoz_spider.py`，示例如下：	
+创建`.\tutorial\spiders\dmoz_spider.py`，示例如下：
 
-``` Python
+{% highlight Python %}
 import scrapy
 
 class DmozSpider(scrapy.Spider):
@@ -86,7 +86,7 @@ class DmozSpider(scrapy.Spider):
         filename = response.url.split("/")[-2] + '.html'
         with open(filename, 'wb') as f:
             f.write(response.body)
-```
+{% endhighlight %}
 
 ## 4.  爬取数据
 
@@ -104,7 +104,7 @@ Scrapy框架对`start_urls`中URL创建`scrapy.Request`对象来进行请求访�
 
 进一步，使用先前定义的容器来保存数据：
 
-``` Python
+{% highlight Python %}
 import scrapy
 
 from tutorial.items import DmozItem
@@ -124,7 +124,7 @@ class DmozSpider(scrapy.Spider):
             item['link'] = sel.xpath('a/@href').extract()
             item['desc'] = sel.xpath('text()').extract()
             yield item
-```
+{% endhighlight %}
 
 运行`scrapy crawl dmoz -o items.json`，爬取数据并存储到iterms.json文件。scrapy默认是追加文件内容，即若存在文件不覆盖。
 

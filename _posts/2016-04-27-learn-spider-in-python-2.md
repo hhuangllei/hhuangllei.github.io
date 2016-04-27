@@ -41,7 +41,7 @@ modify_date: 2016-04-27 15:00:00 +0800
 ### 1.2 Proxy代理设置
 urllib2默认使用环境变量http_proxy来设置HTTP Proxy，也可以手动在程序中设置Proxy。
 
-``` Python
+{% highlight Python %}
 enable_proxy = True
 proxy_hander = urllib2.ProxyHandler({"http" : 'http://some-proxy.com:8080'})
 null_proxy_hander = urllib2.ProxyHandler({})
@@ -52,20 +52,20 @@ else:
     opener = urllib2.build_opener(null_proxy_hander)
 
 urllib2.install_opener(opener)
-```
+{% endhighlight %}
 
 使用SOCKS5代理，需要使用[SocksiPy](https://sourceforge.net/projects/socksipy/)，可以使用`pip install PySocks`安装。
 
-``` Python
+{% highlight Python %}
 socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, '127.0.0.1', 1080)
 socket.socket = socks.socksocket
 response = urllib2.urlopen(url)
-```
+{% endhighlight %}
 
 ### 1.3 Redirect设置
 urllib2 默认情况下会针对 HTTP 3XX 返回码自动进行 redirect 动作，无需人工配置。要检测是否发生了 redirect 动作，只要检查一下 Response 的 URL 和 Request 的 URL 是否一致就可以了。
 
-``` Python
+{% highlight Python %}
 my_url = 'http://xuxian.me'
 response = urllib2.urlopen(my_url)
 new_url = response.geturl()
@@ -74,30 +74,30 @@ if ~redirected:
     print '%s -> %s' % (my_url, new_url)
 else:
     print 'No Redirect'
-```
+{% endhighlight %}
 
 ### 1.4 Cookie处理
 urllib2 对 Cookie 的处理也是自动的。可以使用`cookielib`的`CookieJar`来得到Cookie的值。
 
-``` Python
+{% highlight Python %}
 cookie = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
 response = opener.open('http://www.baidu.com')
 for item in cookie:
     print 'Name = ' + item.name,
     print 'Value = ' + item.value
-```
+{% endhighlight %}
 
 ### 1.5 Debug Log设置
 使用 urllib2 时，可以通过下面的方法把 debug Log 打开，这样收发包的内容就会在屏幕上打印出来，方便调试，有时可以省去抓包的工作。
 
-``` Python
+{% highlight Python %}
 httpHandler = urllib2.HTTPHandler(debuglevel = 1)
 httpsHanler = urllib2.HTTPSHandler(debuglevel = 1)
 opener = urllib2.build_opener(httpHandler, httpsHanler)
 urllib2.install_opener(opener)
-reponse = urllib2.urlopen('http://www.baidu.com')
-```
+response = urllib2.urlopen('http://www.baidu.com')
+{% endhighlight %}
 
 ## 2. Python正则表达式
 [Python正则表达式指南](http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html)
@@ -118,11 +118,11 @@ reply: ''
 
 添加header，伪造浏览器：
 
-``` Python
+{% highlight Python %}
 request = urllib2.Request(url);
 request.add_header('user-agent', 'Mozilla/5.0')
 response = urllib2.urlopen(request)
-```
+{% endhighlight %}
 
 结果展示：
 
