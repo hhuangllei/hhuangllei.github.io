@@ -15,12 +15,12 @@ author:
  email: hhuangllei@qq.com
  github_username:  hhuangllei
  weibo_username: hhuangllei
- 
+
 # default Markdown interpreter: Maruku, upgrading to kramdown
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 excerpt_separator: ""
 
 paginate: 10
