@@ -110,18 +110,22 @@ reponse = urllib2.urlopen('http://www.baidu.com')
 * urllib2直接urlopen返回空，需要伪造浏览器。
 
 打开debug log，得到的信息：
+
 ```
 send: 'GET / HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: www.qiushibaike.com\r\nConnection: close\r\nUser-Agent: Python-urllib/2.7\r\n\r\n'
 reply: ''
 ```
 
 添加header，伪造浏览器：
+
 ``` Python
 request = urllib2.Request(url);
 request.add_header('user-agent', 'Mozilla/5.0')
 response = urllib2.urlopen(request)
 ```
+
 结果展示：
+
 ```
 user_name = 放开她，一起来, article_id = qiushi_tag_116130960:  
 
