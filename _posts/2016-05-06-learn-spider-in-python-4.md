@@ -19,7 +19,7 @@ modify_date: 2016-05-06 19:30:00 +0800
 
 关于正则表达式：
 
-``` Python
+{% highlight Python %}
 pattern = re.compile(r'\D*(\d+)\D*')
 nums = pattern.match(text)
 num_str = ''
@@ -28,7 +28,7 @@ if nums:
   #print num_str
 else:
   print 'not match'
-```
+{% endhighlight %}
 
 ## 2. [爬虫闯关第二关](http://www.heibanke.com/lesson/crawler_ex01/)
 
@@ -42,7 +42,7 @@ else:
 
 注意，每次需要新创建`request = urllib2.Request(base_url)`，否则密码尝试可能失败，如果缩小范围比如`range(14,20)`又会成功，没弄明白机理。
 
-``` Python
+{% highlight Python %}
 cookie = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
 
@@ -66,19 +66,19 @@ for i in range(30):
 request = urllib2.Request(base_url)
 request.add_data(postdata)
 response = opener.open(request)
-```
+{% endhighlight %}
 
 ### 2.2 使用Requests
 使用urllib2已经感到繁琐，尝试使用[Requests](http://www.python-requests.org/en/master/)，号称“safe for human consumption”，确实精简好用。
 
-``` Python
+{% highlight Python %}
 for i in range(30):
   postdata = {
     'username': 'mrknight-cn',
     'password': str(i)
   }
   r = requests.post(base_url, data=postdata)
-```
+{% endhighlight %}
 
 ## 3. [爬虫闯关第三关](http://www.heibanke.com/lesson/crawler_ex02/)
 
@@ -86,7 +86,7 @@ for i in range(30):
 
 两层保护涉及到[csrftoken](http://baike.baidu.com/view/1609487.htm)，首先需要登录时设置`csrfmiddlewaretoken`，其次尝试密码时设置`csrfmiddlewaretoken`，两次`csrftoken`不同。
 
-``` Python
+{% highlight Python %}
 # login
 s = requests.Session()
 r = s.get(login_url)
@@ -110,7 +110,7 @@ for i in range(30):
 }
 
 r = s.post(base_url, data=postdata)
-```
+{% endhighlight %}
 
 ## 4. [爬虫闯关第四关](http://www.heibanke.com/lesson/crawler_ex03/)
 
@@ -128,7 +128,8 @@ r = s.post(base_url, data=postdata)
 * 密码页面载入缓慢，考虑使用多线程，但是该网站限制了访问数目，最多只能2个线程同时访问，其他线程会得到404。所以最后在代码中还是使用的单线程来处理。
 
 代码输出结果：
-```
+
+{% highlight bat %}
 jbFEsgdYkgAQlRC695U739AAgNxhwgFU
 OUswR2q1NPnQGhL2hq7rio77lCvsOAz1
 iter 1, gwdbook size: 65
@@ -141,4 +142,4 @@ start: 1462525532.6, end: 1462526346.19, cost: 813.589999914
 password:  4894613647990394874326048437134877661813696344916326470648993670283105253381901613579433963964296911
 OUswR2q1NPnQGhL2hq7rio77lCvsOAz1
 密码确认
-```
+{% endhighlight %}
