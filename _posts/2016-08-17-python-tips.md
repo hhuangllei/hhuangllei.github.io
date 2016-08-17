@@ -20,7 +20,8 @@ trusted-host=pypi.doubanio.com
 ```
 `pip`更新源后，速度嗖嗖地上去了。
 
-参考资料：
+参考资料：  
+
 * https://www.zhihu.com/question/38341743
 * https://pip.pypa.io/en/latest/user_guide/#config-file (官网描述的配置文件路径好像有问题)
 
@@ -45,7 +46,8 @@ pycallpraph专门用来绘制Python的模块调用关系图，看示例图效果
 
   需要安装`pygraphviz`，并且配置感觉略复杂，稍微试用了下，因为Python程序比较大调用多，导致绘制出来的图很大，实际也不方便查看，但应该可以通过各种配置来进行定制，还未去折腾。
 
-参考资料：
+参考资料： 
+ 
 * https://en.wikipedia.org/wiki/Call_graph
 * http://blog.csdn.net/solstice/article/details/488865
 * [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html)
