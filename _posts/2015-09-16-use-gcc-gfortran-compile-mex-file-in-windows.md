@@ -250,7 +250,11 @@ Invalid MEX-file 'C:\Users\huanglei\Desktop\composite_quantization\lbfgs_um\prin
 {% highlight bat %}
 EXPORTS
 _MEXFUNCTION@16=mexfunction
+{% endhighlight %}
 
+改写为：
+
+{% highlight bat %}
 EXPORTS
 MEXFUNCTION=mexfunction
 {% endhighlight %}
