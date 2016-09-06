@@ -19,8 +19,12 @@ author:
 # default Markdown interpreter: Maruku, upgrading to kramdown
 # Build settings
 markdown: kramdown
-permalink: pretty
 highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
+permalink: pretty
 excerpt_separator: ""
 
 paginate: 10
