@@ -19,7 +19,7 @@ author:
 # default Markdown interpreter: Maruku, upgrading to kramdown
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: Rouge
 kramdown:
   input: GFM
   hard_wrap: false
