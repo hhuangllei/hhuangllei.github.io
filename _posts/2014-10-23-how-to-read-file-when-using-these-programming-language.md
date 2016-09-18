@@ -57,6 +57,12 @@ int main()
 	try
 	{
 		ifstream fin(filename);
+		if (!fin.is_open())
+		{
+			cout << "Error: open file " << filename << " failed.\n" << endl;
+			return -1;
+		}
+		
 		string line = "";
 		while (!fin.eof())
 		{
@@ -74,6 +80,9 @@ int main()
 	return 0;
 }
 {% endhighlight %}
+
+ifstream打开错误文件路径时，不能只通过`!fin.eof()`去判断，需要使用`!fin.is_open()`。  
+不存在的文件路径的状态：good()=0，eof()=0，fail()=1，bad()=0  
 
 * C#
 
