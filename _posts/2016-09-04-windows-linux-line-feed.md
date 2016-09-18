@@ -40,7 +40,7 @@ int main()
 * Mac `\r`  
 但是实际中却忘记了，非得踩一回坑才能印象深刻，为了以后能够更快得定位问题或者避免问题，进行了记录整理。
 
-故事还得从头说起：程序需要从一个filelist中读取文件路径，进而读取文件。先在Windows下写的filelist，随后传到了Linux服器上进行执行，发现`FILE *fp=fopen(filelist, "r")`得到的文件指针为`NULL`，但是打印出来的提示却显示正常。。。  
+故事还得从头说起：程序需要从一个filelist中读取文件路径，进而读取文件。先在Windows下写的filelist，随后传到了Linux服器上进行执行（使用sftp直接从Windows向LInux服器传输文件，git设置了`autocrlf = true`会自动处理不同系统下的换行符问题），发现`FILE *fp=fopen(filelist, "r")`得到的文件指针为`NULL`，但是打印出来的提示却显示正常。。。  
 
 ``` c++
 printf("open file list: %s\n", filelist);
