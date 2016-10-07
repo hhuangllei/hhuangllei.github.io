@@ -138,6 +138,6 @@ using namespace std;
 最开始都以为Github博客是不是不支持这种语法啊，但官网都给出了文档不应该啊，又开始怀疑`_config.yml`配置问题，里面设置的`highlighter: rouge`是不是有问题呢，折腾了一会儿，又发现是空行啊！！！与表格语法一样，需要在代码块前留空行！！！
 
 参考文献：  
-* [Writing on GitHub](https://help.github.com/categories/writing-on-github/)
+* [Writing on GitHub](https://help.github.com/categories/writing-on-github/)  
 * [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/)  
 * [Creating and highlighting code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/)  
