@@ -2,7 +2,7 @@
 layout: post
 title: Linux后台运行程序的那些事儿
 categories: [coding]
-modify_date: 2015-08-19 17:00:00 +0800
+modify_date: 2016-11-21 11:00:00 +0800
 ---
 
 平时主要是在Windows平台下工作，但偶尔会使用Linux，一般就是使用putty连接linux来使用。有时就会遇到想要跑多份程序，但只开了一个putty，如何让程序在后台运行的问题？
@@ -87,6 +87,11 @@ C-a t -> Time，显示当前时间，和系统的 load
 C-a k -> kill window，强行关闭当前的 window
 {% endhighlight %}
 
+原来关闭screen只会`kill PID`，现在发现可以这样比较便捷的关闭：  
+
+```bash
+screen -r yourname -X quit
+```
 
 参考文献：
 
