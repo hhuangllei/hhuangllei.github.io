@@ -48,6 +48,7 @@ ls -l |grep "^d"|wc -l
 ```bash
 ls -lR | grep "^-" | wc -l
 ```
+
 ### 1.4 统计当前目录以及子目录下目录的数目
 
 ```bash
