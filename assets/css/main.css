@@ -33,7 +33,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+  margin-bottom: 0.5em;margin-top:0.5em;
+}
 
 h1 { margin-bottom: 1em; }
 h3 {margin-bottom: 0.5em;margin-top:0.5em;}
@@ -198,7 +200,7 @@ a.nav-link:hover {
 .post pre {
   border: 1px #ddd;
   background-color: #eef;
-  padding: 0 .4em;
+  padding: 0.2em;
 }
 
 .post ol {
