@@ -110,7 +110,6 @@ windows用户推荐安装[VNC Viewer](https://www.realvnc.com/en/connect/downloa
 2. 远程连接  
 输入ip:id，输入密码，远程桌面登录，又可以继续IDE丝滑顺畅Debug
 
-References:
+## References
 * [centos7.2部署vnc服务记录](https://www.cnblogs.com/kevingrace/p/5821450.html)  ​
-* [在Alios测试开发机上安装Gnome图形界面](https://www.atatech.org/articles/68622)  
 * [CentOS 中 YUM 安装桌面环境](https://cnzhx.net/blog/centos-yum-install-desktop/)  
